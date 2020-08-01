@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `/mdevblog/`,
+    description: `Assorted thoughts and ideas from Michael Agard.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -14,6 +14,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/blog-posts/`
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
