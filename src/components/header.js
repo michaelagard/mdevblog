@@ -22,9 +22,9 @@ const Header = ({ siteTitle, author }) => (
       <h1>
         <Link to="/">
           {siteTitle}
-        </Link>, from {author}
+        </Link>, by {author}
       </h1>
-      <Link to="https://www.linkedin.com/in/mdagard/">
+      <Link to="https://www.linkedin.com">
       <ProfileImage className="profile-picture" src={ProfilePicture} alt="Michael Agard"/>
 
       </Link>
