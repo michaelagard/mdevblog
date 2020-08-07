@@ -5,8 +5,10 @@ import './index.css'
 import Layout from '../components/layout';
 
 const BlogPostSummaryContainer = styled.div`
-	background: rgb(12, 12, 12, .1);
-	margin-bottom: 5px;
+	background: rgb(12, 12, 12, .5);
+	border-radius: .55rem;
+	margin-bottom: 1%;
+	padding: 3%;
 	p {
 		margin-bottom: 0px;
 	}
