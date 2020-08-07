@@ -8,6 +8,7 @@ code {
     display: inline-block;
     background: #323232;
     overflow: scroll;
+    overflow-y: hidden;
 }
 h1+a {
     color: green;
