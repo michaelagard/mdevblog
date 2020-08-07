@@ -5,9 +5,7 @@ import './index.css'
 import Layout from '../components/layout';
 
 const BlogPostSummaryContainer = styled.div`
-	background: rgb(12, 12, 12, .01);
-	/* border-radius: 5%; */
-	/* opacity: 0.6; */
+	background: rgb(12, 12, 12, .1);
 	margin-bottom: 5px;
 	p {
 		margin-bottom: 0px;

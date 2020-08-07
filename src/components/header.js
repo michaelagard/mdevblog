@@ -17,14 +17,14 @@ const ProfileImage = styled.img`
   border: .13rem solid #ffffff;
 `;
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, author }) => (
     <HeaderContainer>
       <h1>
         <Link to="/">
           {siteTitle}
-        </Link>
+        </Link>, from {author}
       </h1>
-      <Link to="https://www.linkedin.com">
+      <Link to="https://www.linkedin.com/in/mdagard/">
       <ProfileImage className="profile-picture" src={ProfilePicture} alt="Michael Agard"/>
 
       </Link>

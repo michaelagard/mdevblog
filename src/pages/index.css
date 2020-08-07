@@ -1,6 +1,6 @@
 body {
     background: #212121;
-    color: #ffffff;
+    color: #bbb;
 }
 
 code {
@@ -9,11 +9,15 @@ code {
     background: #323232;
     overflow: scroll;
 }
-
-a:visited {
-    color: #fff
+h1+a {
+    color: green;
 }
-
+a {
+    color: #aaa;
+}
+a:visited {
+    color: #aaf
+}
 .profile-picture {
     width: 50px;
     height: auto;

@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
@@ -22,7 +23,7 @@ const Layout = ({ children }) => {
 
   return (
     <LayoutWrapper>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} author={data.site.siteMetadata.author} />
       <div>
         <main>{children}</main>
       </div>
