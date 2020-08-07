@@ -1,7 +1,18 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-
+import styled from 'styled-components';
+import './index.css'
 import Layout from '../components/layout';
+
+const BlogPostSummaryContainer = styled.div`
+	background: rgb(12, 12, 12, .01);
+	/* border-radius: 5%; */
+	/* opacity: 0.6; */
+	margin-bottom: 5px;
+	p {
+		margin-bottom: 0px;
+	}
+`;
 
 const IndexPage = ({ data }) => {
 	const { edges } = data.allMarkdownRemark;
@@ -12,16 +23,18 @@ const IndexPage = ({ data }) => {
 				{edges.map(edge => {
 					const { frontmatter } = edge.node;
 					return (
-						<div key={frontmatter.path}>
-							<Link to={frontmatter.path}>{frontmatter.title}</Link>
-							&nbsp;
-							<small>
-								{' '}
-								<em>published on</em> {frontmatter.date}
-							</small>
-							<p>{frontmatter.excerpt}</p>
-							<br />
-						</div>
+						<BlogPostSummaryContainer>
+							<div key={frontmatter.path}>
+								<Link to={frontmatter.path}>{frontmatter.title}</Link>
+								<br/>
+								<small>
+									{' '}
+									<em>published on</em> {frontmatter.date}
+								</small>
+								<p>{frontmatter.excerpt}</p>
+								{/* <br /> */}
+							</div>
+						</BlogPostSummaryContainer>
 					);
 				})}
 			</div>

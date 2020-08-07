@@ -5,6 +5,7 @@ const typography = new Typography({
   baseLineHeight: 1.666,
   headerFontFamily: ["Avenir Next", "Helvetica Neue", "Segoe UI", "Helvetica", "Arial", "sans-serif",],
   bodyFontFamily: ["Georgia", "serif"],
+  headerGray: 100,
 }
 )
 export default typography

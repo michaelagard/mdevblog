@@ -1,0 +1,20 @@
+body {
+    background: #212121;
+    color: #ffffff;
+}
+
+code {
+    width: 100%;
+    display: inline-block;
+    background: #323232;
+    overflow: scroll;
+}
+
+a:visited {
+    color: #fff
+}
+
+.profile-picture {
+    width: 50px;
+    height: auto;
+}
