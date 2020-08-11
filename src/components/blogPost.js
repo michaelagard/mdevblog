@@ -10,6 +10,15 @@ const BlogPostContainer = styled.div`
 	padding: 3%;
 `;
 
+const FooterBlogNav = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const FooterBlogNavItem = styled.div`
+  
+`;
+
 const Template = ({ data, pageContext }) => {
 	const title = data.markdownRemark.frontmatter.title;
 	const date = data.markdownRemark.frontmatter.date;
@@ -25,28 +34,29 @@ const Template = ({ data, pageContext }) => {
 				</div>
 				<br />
 				<div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
-				<p>
-					{prev && (
-						<Link to={prev.frontmatter.path}>
-							{prev.frontmatter.title}{' '}
-							<span role="img" aria-label="point-left">
-								👈{' '}
-							</span>
-							Previous
-						</Link>
-					)}
-				</p>
-				<p>
-					{next && (
-						<Link to={next.frontmatter.path}>
-							Next{' '}
-							<span role="img" aria-label="point-right">
-								👉
-							</span>
-							{next.frontmatter.title}
-						</Link>
-					)}
-				</p>
+					<FooterBlogNav>
+						<FooterBlogNavItem>
+						{prev && (
+							<>
+								{"< "}
+								<Link to={prev.frontmatter.path}>
+									{prev.frontmatter.title}
+								</Link>
+							</>
+						)}
+					</FooterBlogNavItem>
+						<FooterBlogNavItem>
+							{next && (
+								<>
+								{"> "}
+									<Link to={next.frontmatter.path}>
+										{next.frontmatter.title}
+									</Link>
+								</>
+							)}
+						</FooterBlogNavItem>
+					</FooterBlogNav>
+				
 			</BlogPostContainer>
 		</Layout>
 	);
