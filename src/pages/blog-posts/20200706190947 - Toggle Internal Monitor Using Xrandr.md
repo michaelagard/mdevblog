@@ -1,5 +1,5 @@
 ---
-path: '/bash-script-switch-to-portrait'
+path: '/bash-toggle-monitor'
 date: '2020-07-06'
 title: 'Toggle Internal Monitor Using xrandr'
 tags: ['bash', 'script', '2020', 'screen', 'monitor']
