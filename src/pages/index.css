@@ -15,10 +15,10 @@ h1+a {
     color: green;
 }
 a {
-    color: #aaa;
+    color: #aaf
 }
 a:visited {
-    color: #aaf
+    color: #aaa;
 }
 .profile-picture {
     width: 50px;
