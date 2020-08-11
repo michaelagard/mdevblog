@@ -9,7 +9,8 @@ const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0 0 0;
+  margin: 8% 0 2% 0;
+  padding: 0 1% 0 1%;
 `;
 
 const ProfileImage = styled.img`
@@ -24,10 +25,9 @@ const Header = ({ siteTitle, author }) => (
           {siteTitle}
         </Link>, by {author}
       </h1>
-      <Link to="https://www.linkedin.com">
-      <ProfileImage className="profile-picture" src={ProfilePicture} alt="Michael Agard"/>
-
-      </Link>
+      <a href="https://www.linkedin.com">
+        <ProfileImage className="profile-picture" src={ProfilePicture} alt="Michael Agard"/>
+      </a>
     </HeaderContainer>
 )
 
