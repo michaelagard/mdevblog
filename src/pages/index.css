@@ -4,11 +4,12 @@ body {
 }
 
 code {
-    width: 100%;
+    max-width: 100%;
     display: inline-block;
     background: #323232;
-    overflow: scroll;
+    /* overflow: scroll; */
     overflow-y: hidden;
+    line-height: 1.2rem;
 }
 h1+a {
     color: green;
