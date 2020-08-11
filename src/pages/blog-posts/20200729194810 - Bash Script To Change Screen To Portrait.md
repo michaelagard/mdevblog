@@ -5,7 +5,6 @@ title: 'Bash Script To Change Screen To Portrait'
 tags: ['bash', 'script', '2020', 'screen', 'monitor', 'portrait']
 excerpt: 'Sometimes in Linux, you just want to execute a small task using a keyboard shortcut.'
 ---
-
 Sometimes in Linux, you just want to execute a small task using a keyboard shortcut. Below is a script that allows me to reliably toggle between landscape and left screen orientation for my monitor labeled "HDMI-0". This script doesn't use any external file to save your orientation state as it calls greps through xrander's output to determine the orientation. Neat!
 
 ```

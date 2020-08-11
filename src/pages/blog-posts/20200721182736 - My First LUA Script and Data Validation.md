@@ -5,7 +5,6 @@ title: 'My First LUA Script and Data Validation'
 tags: ['lua', 'script', '2020', 'data-validation', 'monitor', 'portrait']
 excerpt: 'Nothing makes me want to tab to my code less than knowing I need to take the input of some user, and scrub that input clean of all errors, parse what is usable, and execute the script if possible.'
 ---
-
 [Data validation](https://en.wikipedia.org/wiki/Data_validation) is a tiring exercise. Nothing makes me want to tab to my code less than knowing I need to take the input of some user, and scrub that input clean of all errors, parse what is usable, and execute the script if possible. Error handling is another bag of worms all together.
 
 Let me explain what I'm doing with LUA in the first place. I probably don't need to introduce Minecraft, but if you are curious, here is the [Wikipedia link](https://en.wikipedia.org/wiki/Minecraft). I'm running this mod for Minecraft called [ComputerCraft](https://github.com/dan200/ComputerCraft) that is a computer emulator inside of the game. This computer is a very capable machine which supports displays, networking, vector rendering, and much more. this all runs from LUA scripts built on top of a Java executable.
