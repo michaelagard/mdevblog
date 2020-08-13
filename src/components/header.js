@@ -8,7 +8,7 @@ import ProfilePicture from '../images/profile_picture.png'
 const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
-  margin: 8% 0 2% 0;
+  margin: 3rem 0 2% 0;
   padding: 0 1% 0 1%;
 `;
 
