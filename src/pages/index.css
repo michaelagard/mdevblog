@@ -11,15 +11,19 @@ code {
     overflow-y: hidden;
     line-height: 1.2rem;
 }
+
 h1+a {
     color: green;
 }
+
 a {
     color: #aaf
 }
+
 a:visited {
     color: #aaa;
 }
+
 .profile-picture {
     width: 50px;
     height: auto;

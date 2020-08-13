@@ -1,10 +1,11 @@
 ---
-path: '/bash-toggle-monitor'
-date: '2020-07-06'
-title: 'Toggle Internal Monitor Using xrandr'
-tags: ['bash', 'script', '2020', 'screen', 'monitor']
-excerpt: 'A simple script that will toggle a monitor on or off.'
+path: '/tested'
+date: '2020-07-29'
+title: 'Test'
+tags: ['test']
+excerpt: 'test'
 ---
+
 xRandR is a primitive command line interface to RandR extension. xRandR is used to set the size, orientation and/or reflection of the outputs for a screen. It can also set the screen size. It can also control whether or not the screen is on or off which is handy when a screen doesn't have an on and off switch such as a laptop monitor.
 
 This article will cover a bash script that has two variables that you'll need to set. You can find the name of your screens using the `xrandr` command which the output looks like this.

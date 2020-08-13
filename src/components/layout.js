@@ -5,8 +5,11 @@ import styled from 'styled-components';
 import Header from "./header"
 
 const LayoutWrapper = styled.div`
-  width: 40%;
+  max-width: 600px;
   margin: auto;
+  @media (max-width: 768px) {
+  width: 95%;
+  }
 `;
 
 const Layout = ({ children }) => {
@@ -15,7 +18,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
-          author  
+          author
         }
       }
     }

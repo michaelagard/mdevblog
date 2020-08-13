@@ -23,8 +23,8 @@ const Template = ({ data, pageContext }) => {
 	const title = data.markdownRemark.frontmatter.title;
 	const date = data.markdownRemark.frontmatter.date;
 	const html = data.markdownRemark.html;
+	const tags = data.markdownRemark.frontmatter.tags;
 	const { next, prev } = pageContext;
-	
 	return (
 		<Layout>
 			<BlogPostContainer>
@@ -34,6 +34,9 @@ const Template = ({ data, pageContext }) => {
 				</div>
 				<br />
 				<div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
+				{tags.map((tag, i) => {
+					return <span key={i}>#{tag}</span>
+				})}
 					<FooterBlogNav>
 						<FooterBlogNavItem>
 						{prev && (
